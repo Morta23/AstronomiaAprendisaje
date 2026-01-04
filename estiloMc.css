@@ -1,0 +1,31 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.informacion {
+    position: relative;
+    text-align: center;
+    z-index: 1;
+    font-weight: lighter;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
+}
+
+.Label-M {
+    display: inline;
+    z-index: 0;
+}
+
+.Label-m {
+    display: inline;
+    z-index: 0;
+}
+
+.separartitulos {
+    padding: 10px;
+}
+
+.separartexto {
+    padding: 5px;
+}

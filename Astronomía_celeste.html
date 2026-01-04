@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="es"></html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Astronomía celeste</title>
+    <style>
+        .body{
+            background-color: beige;
+        }
+        .contendor{
+            z-index: 1;
+            background-color:aquamarine;
+            padding: 35px;
+        }
+    </style>    
+    <link rel="stylesheet" href="EstiloAc.css">
+</head>
+<body>
+    <div class="contendor">
+        <h1><p style="text-align: center;">Astronomía celeste</p></h1>
+        <a href="index.html">Volver al inicio</a>
+    </div>
+    <div class="Información">
+        <h2 class="Texto">
+            <div class="separartitulos"></div>
+            Astronomía esférica
+            <div class="separartexto"></div>
+            <p style="font-size: medium;">Polos celestes:<p style="font-size: medium; font-weight: normal;">Posciciones aparentes del Sur 
+                y el Norte (Lopéz, et al., 2018)</p></p>
+            <div class="separartexto"></div>
+            <p style="font-size: medium;">Cenit:<p style="font-size: medium; font-weight: normal;">Se encuentra encima de nosotros en la 
+                esfera celeste (Lopéz, et al., 2018)</p></p>
+            <div class="separartexto"></div>
+            <p style="font-size: medium;">Nadir:<p style="font-size: medium; font-weight: normal;">Se encuentra debajo de nosotros en la 
+                esfera cesleste (Lopéz, et al., 2018)</p>
+            <div class="separartexto"></div>
+            <p style="font-size: medium;">Horizonte verdadero:<p style="font-size: medium; font-weight: normal;">Circulo perpendicular al 
+                Norte y Sur verdaderos del planeta (Lopéz, et al., 2018)</p></p>
+            <div class="separartexto"></div>
+            <p style="font-size: medium;">Ecuador celeste:<p style="font-size: medium; font-weight: normal;">Linea imaginaria que divide a 
+                la esfera celeste en los aparentes norte y sur (Lopéz, et al., 2018)</p></p>
+            <div class="separartexto"></div>
+            <p style="font-size: medium;">Paralelos celeste:<p style="font-size: medium; font-weight: normal;">Circulos de menor tamaño que 
+                estan en paralelo con el ecuador celeste (Lopéz, et al., 2018)</p></p>
+            <div class="separartexto"></div>
+            <p style="font-size: medium;">Meridiano celeste:<p style="font-size: medium; font-weight: normal;">Semicirculo perpendicular 
+                al ecuador celeste que se encuentra desde el polo Sur y Norte. (Lopéz, et al., 2018)</p></p>
+            <div class="separartexto"></div>
+            <p style="font-size: medium;">Ejemplo</p>
+            <img src="imagenes/2025-10-23_23-34-42.jpg"><br>
+            <div class="separartitulos"></div>
+            Coordenadas horizontales<br>
+            <div class="Purebacir" style="font-size: medium; font-weight: normal;"> De Norte a Sur: o De Este a Oeste:
+                <div class="circulo" id="circulo_x_y_z" style="height: 100px; width: 100px;"></div>                            
+            </div>
+            <p style="font-size: medium;">Triangulo:</p>
+            <div class="hipotenusag" id="hgirar"></div>
+            <div class="apuntary" id="apy"></div>
+            <div class="apuntarx" id="apx"></div> 
+            <br>           
+            <div class="info">
+                <p>Ángulo actual: <span id="angleValue" >0</span>°</p>
+            </div>
+            <p style="font-size: medium;">Altitud:<p style="font-size: medium; font-weight: normal;">"Distancia angular de un objeto
+                por encima del horizaonte del observador" (Vito Technology, Inc., 2024)</p></p>
+
+            <div class="separartexto"></div>
+            <p style="font-size: medium;">Acimut:<p style="font-size: medium; font-weight: normal;">"Indica la posición de un objeto a 
+                lo largo del horizonte." (Vito Technology, Inc., 2024)</p></p>
+                
+            <img src="imagenes/2025-10-24_3-07-09.jpg" height="250px">
+            <div class="dibujo"></div>
+            <div class="dibujo2"></div>
+            <div class="espaciado"></div>
+            <div class="separartitulos"></div>
+            Coordenadas ecuatoriales<br>          
+            <div class="circulo_z"></div> 
+            <div class="eclipse2"></div> 
+            <div class="ahdbn">
+                <img src="imagenes/2025-10-24_3-32-48.jpg" >
+            </div>
+            <div class="separartexto"></div>
+            <p style="font-size: medium;">Declinación :<p style="font-size: medium; font-weight: normal;">"Distancia angular de un objeto 
+                al norte o al sur del ecuador celeste." (Vito Technology, Inc., 2024)</p></p>
+            <div class="separartexto"></div>
+            <p style="font-size: medium;">Ascensión recta:<p style="font-size: medium; font-weight: normal;">"Distancia angular de un objeto 
+                hacia el este a lo largo del ecuador celeste, comenzando desde el Primer Punto de Aries." (Vito Technology, Inc., 2024)</p></p>
+            <div class="separartexto"></div>
+                <p style="font-size: medium;">Punto Aries:<p style="font-size: medium; font-weight: normal;">Es el punto en donde el Sol pasa 
+                    "de estar al sur al norte del Ecuador", lo cual se denomina equinoccio debido a que la declinación del Sol es 0 al igual que 
+                    en el punto libra. <br> (Equinoccios | Sociedad Española de Astronomía, s. f.)</p></p>
+            <div class="separartitulos"></div>
+            Bibliografía
+            </h2>
+            Vito Technology, Inc. (2024, 25 julio). Coordenadas celestes: guía definitiva. Star Walk. 
+                https://starwalk.space/es/news/celestial-coordinates#declinaci%C3%B3n-y-ascensi%C3%B3n-recta-sistema-ecuatorial
+            <div class="separartexto"></div>
+            https://starwalk.space/es/news/celestial-coordinates#declinaci%C3%B3n-y-ascensi%C3%B3n-recta-sistema-ecuatorial
+            <div class="separartexto"></div>
+            Lopéz, E., Armijos, J., Arias, M., Vera, D., Aldás, F., & Llerena, M. (2018). Capacitación en Astronomía y Astrofísica a docentes de 
+                las instituciones educativas municipales del Distrito Metropolitano de Quito. Quito: Observatorio Astronómico de Quito - Escuela 
+                Politécnica Nacional.
+            <div class="separartexto"></div>
+    </div>
+    <script>
+        const cirx = document.getElementById('circulo_x_y_z');
+        const ax = document.getElementById('apx')
+        const ay = document.getElementById('apy')
+        const valordeg = document.getElementById('angleValue')
+        
+        let currentAngle = 0;
+        let radianes = 0
+        let enyt = 0
+        let enxt = 0
+        let antangle = 0
+        let prueba = 0
+
+        ax.style.height = 5 +'px';
+        ax.style.width = 5 +'px';
+        ax.style.marginLeft = 758 +'px';
+        ay.style.width = 5 +'px';
+        ay.style.height = 5 +'px';
+        
+        const bucle = setInterval(()=>{                    
+            currentAngle = antangle +1
+            antangle = currentAngle
+            valordeg.innerText = currentAngle  
+            radianes = (currentAngle*Math.PI)/180                   
+            enyt = Math.abs(Math.sin(radianes)*50)           //radio de circulo_x_y_z
+            enxt = Math.abs(Math.cos(radianes)*50)           //radio de circulo_x_y_z
+            ax.style.width = enxt +'px';
+            ay.style.height = enyt +'px';                              
+            console.log(ax.style.width, 'saubd ', ay.style.height, " s ", currentAngle)
+            if (currentAngle >= 360) {
+                currentAngle = antangle +1
+                antangle = currentAngle 
+                antangle = prueba
+            }
+        },100)
+        setInterval(bucle, 1000)
+    </script>
+</body>
