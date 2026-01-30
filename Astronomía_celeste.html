@@ -51,9 +51,8 @@
             <img src="imagenes/2025-10-23_23-34-42.jpg"><br>
             <div class="separartitulos"></div>
             Coordenadas horizontales<br>
-            <div class="Purebacir" style="font-size: medium; font-weight: normal;"> De Norte a Sur: o De Este a Oeste:
-                <div class="circulo" id="circulo_x_y_z" style="height: 100px; width: 100px;"></div>                            
-            </div>
+            <div class="Purebacir" style="font-size: medium; font-weight: normal;"> De Norte a Sur: o De Este a Oeste:</div>
+            <div class="circulo" id="circulo_x_y_z" style="height: 100px; width: 100px;"></div>
             <p style="font-size: medium;">Triangulo:</p>
             <div class="hipotenusag" id="hgirar"></div>
             <div class="apuntary" id="apy"></div>
@@ -92,15 +91,16 @@
                     en el punto libra. <br> (Equinoccios | Sociedad Española de Astronomía, s. f.)</p></p>
             <div class="separartitulos"></div>
             Bibliografía
-            </h2>
-            Vito Technology, Inc. (2024, 25 julio). Coordenadas celestes: guía definitiva. Star Walk. 
-                https://starwalk.space/es/news/celestial-coordinates#declinaci%C3%B3n-y-ascensi%C3%B3n-recta-sistema-ecuatorial
+            <p style="font-size: medium; font-weight: normal;">Vito Technology, Inc. (2024, 25 julio). 
+                Coordenadas celestes: guía definitiva. Star Walk. https://starwalk.space/es/news/celestial-coordinates#declinaci%C3%B3n-y-ascensi%C3%B3n-recta-sistema-ecuatorial</p>
             <div class="separartexto"></div>
-            https://starwalk.space/es/news/celestial-coordinates#declinaci%C3%B3n-y-ascensi%C3%B3n-recta-sistema-ecuatorial
+            <p style="font-size: medium; font-weight: normal;">https://starwalk.space/es/news/celestial-coordinates#declinaci%C3%B3n-y-ascensi%C3%B3n-recta-sistema-ecuatorial
+                </p>
+            </p>
             <div class="separartexto"></div>
-            Lopéz, E., Armijos, J., Arias, M., Vera, D., Aldás, F., & Llerena, M. (2018). Capacitación en Astronomía y Astrofísica a docentes de 
-                las instituciones educativas municipales del Distrito Metropolitano de Quito. Quito: Observatorio Astronómico de Quito - Escuela 
-                Politécnica Nacional.
+            <p style="font-size: medium; font-weight: normal;">Lopéz, E., Armijos, J., Arias, M., Vera, D., 
+                Aldás, F., & Llerena, M. (2018). Capacitación en Astronomía y Astrofísica a docentes de las instituciones educativas municipales del 
+                Distrito Metropolitano de Quito. Quito: Observatorio Astronómico de Quito - Escuela Politécnica Nacional.</p>
             <div class="separartexto"></div>
     </div>
     <script>
@@ -116,28 +116,26 @@
         let antangle = 0
         let prueba = 0
 
-        ax.style.height = 5 +'px';
         ax.style.width = 5 +'px';
-        ax.style.marginLeft = 758 +'px';
-        ay.style.width = 5 +'px';
         ay.style.height = 5 +'px';
         
         const bucle = setInterval(()=>{                    
             currentAngle = antangle +1
             antangle = currentAngle
+            if (currentAngle >= 360) {
+                currentAngle = antangle +1
+                antangle = currentAngle 
+                antangle = prueba
+            }
             valordeg.innerText = currentAngle  
             radianes = (currentAngle*Math.PI)/180                   
             enyt = Math.abs(Math.sin(radianes)*50)           //radio de circulo_x_y_z
             enxt = Math.abs(Math.cos(radianes)*50)           //radio de circulo_x_y_z
             ax.style.width = enxt +'px';
             ay.style.height = enyt +'px';                              
-            console.log(ax.style.width, 'saubd ', ay.style.height, " s ", currentAngle)
-            if (currentAngle >= 360) {
-                currentAngle = antangle +1
-                antangle = currentAngle 
-                antangle = prueba
-            }
+            
         },100)
         setInterval(bucle, 1000)
     </script>
+
 </body>
