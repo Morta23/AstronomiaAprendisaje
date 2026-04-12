@@ -117,7 +117,7 @@
                 <br>
 
             </form>
-            <button onclick="simulacion_K()">Presionar para Distancia entre M y r</button>
+            <button onclick="simulacion_d()">Presionar para Distancia entre M y r</button>
             <button onclick="simulacion_K()">Presionar para periapsis</button>
             <br>
             <img src="imagenes/elipse-excentricidad.jpg">
@@ -145,17 +145,21 @@
             const fuerzaG = M*m* G / (r**2) 
             document.getElementById('fuerzaG').textContent = `fuerzaG: ${fuerzaG}`;
         }
-
-        function simulacion_K () {
+        function simulacion_d () {
             const e = parseFloat(document.getElementById('inpute').value) || 0;
             const deg = parseFloat(document.getElementById('input0').value) || 0;
             const P = parseFloat(document.getElementById('inputP').value) || 0;
-            const r = parseFloat(document.getElementById('inputR').value) || 0;
             
-            const Distanciar = P / ( 1 + (Math.cos(deg))) 
-            const periapsis = r * ( 1 + (e * Math.cos(deg)))
-            document.getElementById('Distanciar').textContent = `Distanciar: ${periapsis}`;
-            document.getElementById('periapsis').textContent = `periapsis: ${Distanciar}`;
+            const distanciar = P / ( 1 + (e * (Math.cos(deg)))) 
+            document.getElementById('Distanciar').textContent = `Distanciar: ${distanciar}`;
+        }
+        function simulacion_K () {
+            const e = parseFloat(document.getElementById('inpute').value) || 0;
+            const deg = parseFloat(document.getElementById('input0').value) || 0;
+            const r = parseFloat(document.getElementById('inputR').value) || 0;
+             
+            const Periapsis = r * ( 1 + (e * Math.cos(deg)))
+            document.getElementById('periapsis').textContent = `periapsis: ${Periapsis}`;
         }
     </script>
 </body>
